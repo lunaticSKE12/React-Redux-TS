@@ -4,6 +4,10 @@ import ReactDOM from 'react-dom';
 interface AppProps {
   color?: string;
 }
+// const App = (props: AppProps): JSX.Element => {
+//   return <div>{props.color}</div>;
+// };
+
 class App extends React.Component<AppProps> {
   state = { counter: 0 };
 
@@ -25,4 +29,4 @@ class App extends React.Component<AppProps> {
   }
 }
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+ReactDOM.render(<App color="red" />, document.querySelector('#root'));
